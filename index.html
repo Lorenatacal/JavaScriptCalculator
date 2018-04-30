@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+        <title>Javascript Calculator</title>
+        <link rel="stylesheet" href="css/layout.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="./index.js"></script>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    </head>
+
+    <body>
+            <h1 class="name">Digital Calculator</h1>
+        <div class="box">
+            <form name = "calculator" class="center">
+                <br><input type="textfield" name="ans" value="" class="textField">
+                <p>
+                    <input type = "reset" value = "AC" class="reset">
+                    <input type = "button" value = "/" onClick = "document.calculator.ans.value+='/'"class = "signs">
+                </p>
+                <p class="firstRow">
+                    <input type = "button" value="7" onClick = "document.calculator.ans.value+='7'"class="button">
+                    <input type = "button" value="8" onClick = "document.calculator.ans.value+='8'"class="button">
+                    <input type = "button" value="9" onClick = "document.calculator.ans.value+='9'"class="button">
+                    <input type = "button" value="-" onClick = "document.calculator.ans.value+='-'"class = "signs">
+                </p>
+                <p>
+                    <input type = "button" value="4" onClick = "document.calculator.ans.value+='4'"class="button">
+                    <input type = "button" value="5" onClick = "document.calculator.ans.value+='5'"class="button">
+                    <input type = "button" value="6" onClick = "document.calculator.ans.value+='6'"class="button">
+                    <input type = "button" value="+" onClick = "document.calculator.ans.value+='+'"class = "signs">
+                </p>
+                    <input type = "button" value="1" onClick = "document.calculator.ans.value+='1'" class="button">
+                    <input type = "button" value="2" onClick = "document.calculator.ans.value+='2'"class="button">
+                    <input type = "button" value="3" onClick = "document.calculator.ans.value+='3'"class="button">
+                   
+                    <input type = "button" value="*" onClick = "document.calculator.ans.value+='*'"class = "signs">
+                <p>
+                    <input type = "button" value="0" onClick = "document.calculator.ans.value+='0'" class = "zero">
+                    <input type = "button" value="." onClick = "document.calculator.ans.value+='.'" class ="button">
+                    <input type = "button" value = "=" onClick = "document.calculator.ans.value=eval(document.calculator.ans.value)"class = "signs">
+                </p>
+                
+            </form>
+        </div>
+    </body>
+</html>
